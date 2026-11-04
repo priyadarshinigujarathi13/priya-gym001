@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Member | RAKSHITHA GYM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html">RAKSHITHA <span>GYM</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Management ▾</button>
+            <div class="dropdown-content">
+                <a href="insert.html">Add Member</a>
+                <a href="list.html">Member List</a>
+                <a href="listone.html">Find Member</a>
+                <a href="update.html">Update Member</a>
+                <a href="delete.html">Delete Member</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="page-background">
+    <section class="form-card">
+        <p class="gold-text">MEMBER MANAGEMENT</p>
+        <h1>DELETE MEMBER</h1>
+
+        <form id="deleteForm">
+            <label>Enter Member ID</label>
+            <input type="number" name="member_id" min="1" placeholder="Enter member ID" required>
+
+            <p class="warning-text">
+                Warning: Deleting a member also deletes their subscription records.
+            </p>
+
+            <button class="btn delete-btn full-btn" type="submit">
+                DELETE MEMBER
+            </button>
+        </form>
+
+        <p id="deleteMessage" class="message"></p>
+    </section>
+</main>
+
+<footer class="footer">
+    <h2>RAKSHITHA GYM</h2>
+    <p>YOUR HEALTH, OUR PRIORITY</p>
+</footer>
+
+</body>
+</html>

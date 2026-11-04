@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Member | RAKSHITHA GYM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html">RAKSHITHA <span>GYM</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Management ▾</button>
+            <div class="dropdown-content">
+                <a href="insert.html">Add Member</a>
+                <a href="list.html">Member List</a>
+                <a href="listone.html">Find Member</a>
+                <a href="update.html">Update Member</a>
+                <a href="delete.html">Delete Member</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="page-background">
+    <section class="form-card">
+        <p class="gold-text">MEMBER MANAGEMENT</p>
+        <h1>UPDATE MEMBER</h1>
+
+        <form id="updateSearchForm">
+            <label>Enter Member ID</label>
+            <input type="number" id="updateSearchId" min="1" required>
+            <button class="btn full-btn" type="submit">SEARCH MEMBER</button>
+        </form>
+
+        <p id="updateSearchMessage" class="message"></p>
+
+        <form id="updateForm" hidden>
+            <label>Member ID</label>
+            <input type="text" id="updateId" readonly>
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone</label>
+            <input type="tel" name="phone" required>
+
+            <label>Gender</label>
+            <select name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Age</label>
+            <input type="number" name="age" min="1" required>
+
+            <label>Membership Plan</label>
+            <select name="plan_id" id="updatePlan" required>
+                <option value="">Loading Plans...</option>
+            </select>
+
+            <label>Status</label>
+            <select name="status" required>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+                <option value="Expired">Expired</option>
+            </select>
+
+            <button class="btn full-btn" type="submit">UPDATE MEMBER</button>
+        </form>
+
+        <p id="updateMessage" class="message"></p>
+    </section>
+</main>
+
+<footer class="footer">
+    <h2>RAKSHITHA GYM</h2>
+    <p>YOUR HEALTH, OUR PRIORITY</p>
+</footer>
+
+</body>
+</html>

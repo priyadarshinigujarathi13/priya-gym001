@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Member | RAKSHITHA GYM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html">RAKSHITHA <span>GYM</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Management ▾</button>
+            <div class="dropdown-content">
+                <a href="insert.html">Add Member</a>
+                <a href="list.html">Member List</a>
+                <a href="listone.html">Find Member</a>
+                <a href="update.html">Update Member</a>
+                <a href="delete.html">Delete Member</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="page-background">
+    <section class="form-card">
+        <p class="gold-text">MEMBER SEARCH</p>
+        <h1>FIND ONE MEMBER</h1>
+
+        <form id="findForm">
+            <label>Enter Member ID</label>
+            <input type="number" id="findId" min="1" placeholder="Enter member ID" required>
+            <button type="submit" class="btn full-btn">FIND MEMBER</button>
+        </form>
+
+        <div id="memberResult" class="member-result"></div>
+        <p id="findMessage" class="message"></p>
+    </section>
+</main>
+
+<footer class="footer">
+    <h2>RAKSHITHA GYM</h2>
+    <p>YOUR HEALTH, OUR PRIORITY</p>
+</footer>
+
+</body>
+</html>

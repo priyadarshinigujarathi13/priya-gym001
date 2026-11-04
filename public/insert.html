@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Member | RAKSHITHA GYM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a class="logo" href="index.html">RAKSHITHA <span>GYM</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Management ▾</button>
+            <div class="dropdown-content">
+                <a href="insert.html">Add Member</a>
+                <a href="list.html">Member List</a>
+                <a href="listone.html">Find Member</a>
+                <a href="update.html">Update Member</a>
+                <a href="delete.html">Delete Member</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="page-background">
+    <section class="form-card">
+        <p class="gold-text">MEMBER REGISTRATION</p>
+        <h1>ADD NEW MEMBER</h1>
+
+        <form id="insertForm">
+            <label>Member Name</label>
+            <input type="text" name="name" placeholder="Enter member name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter email" required>
+
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="Enter phone number" required>
+
+            <label>Gender</label>
+            <select name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Age</label>
+            <input type="number" name="age" min="1" placeholder="Enter age" required>
+
+            <label>Membership Plan</label>
+            <select name="plan_id" id="insertPlan" required>
+                <option value="">Loading Plans...</option>
+            </select>
+
+            <button class="btn full-btn" type="submit">ADD MEMBER</button>
+            <p id="insertMessage" class="message"></p>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <h2>RAKSHITHA GYM</h2>
+    <p>YOUR HEALTH, OUR PRIORITY</p>
+</footer>
+
+</body>
+</html>
